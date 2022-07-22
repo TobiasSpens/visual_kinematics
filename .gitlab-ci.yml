@@ -1,4 +1,4 @@
-test_mc_kinematic:
+test_visual_kinematics:
   variables:
     NAME: visual_kinematics
     DIR: visual_kinematics
