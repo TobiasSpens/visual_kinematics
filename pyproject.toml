@@ -2,7 +2,22 @@
 name = "visual_kinematics"
 version = "2.11.0"
 description = "A package for calculating robot kinematics and visualizing trajectory"
-authors = ["Yue QI dbddqy@outlook.com", "Tobias Spens <tobias.spens@wandelbots.com>"]
+authors = [
+    "Yue QI <dbddqy@outlook.com>",
+    "Tobias Spens <tobias.spens@wandelbots.com>"
+]
+keywords=[
+    'robotics',
+    'kinematics',
+    'inverse kinematics',
+    'trajectory planning',
+    'visualization'
+]
+classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.11"
