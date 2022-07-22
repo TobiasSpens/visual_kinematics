@@ -1,0 +1,15 @@
+test_mc_kinematic:
+  variables:
+    NAME: visual_kinematics
+    DIR: visual_kinematics
+  extends: .test
+
+deploy_package_dev_visual_kinematics:
+  variables:
+    DIR: visual_kinematics
+  extends: .deploy_package_dev
+
+deploy_package_prod_visual_kinematics:
+  variables:
+    DIR: visual_kinematics
+  extends: .deploy_package_prod

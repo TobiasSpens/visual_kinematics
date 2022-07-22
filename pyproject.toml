@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "visual_kinematics"
+version = "2.11.0"
+description = "A package for calculating robot kinematics and visualizing trajectory"
+authors = ["Yue QI dbddqy@outlook.com", "Tobias Spens <tobias.spens@wandelbots.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+scipy = "^1.8.1"
+numpy = "^1.23.0"
+matplotlib = "^3.5.2"
+black = "^22.6.0"
+isort = "^5.10.1"
+pytest = "^7.1.2"
+
+[tool.poetry.dev-dependencies]
+
+[[tool.poetry.source]]
+name = "nexus"
+url = "https://nexus.wabo.run/repository/pypi-all/simple"
+secondary = true
+default = false
+
+[tool.black]
+line-length = 120
+target-version = ['py38']
+
+[tool.isort]
+combine_as_imports = true
+default_section = "THIRDPARTY"
+force_grid_wrap = 0
+include_trailing_comma = true
+line_length = 120
+multi_line_output = 3  # black interop
+use_parentheses = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
